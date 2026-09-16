@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 72. Vedikā pillar from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00072.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-07-05">Encoding of the translation and commentary</change>
+            <change who="part:fufa" when="2025-05-22">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/>Uḷārānaṁ Āyuvadhanikaṁ culayānaṁ<lb n="2"/>deyadhaṁma pāyako sasujiko Imaṁ
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem>Uḷārānaṁ</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">Uḍā<unclear>rāna</unclear></rdg>
+                     <note>The <foreign>akṣara</foreign> ends in a fork that distinguishes the <foreign>ḷa</foreign> from the <foreign>ḍa</foreign>, as in <ref target="DHARMA_INSKanaganahalli00126.xml">KnI0126</ref>: <foreign>koḷaṁba</foreign>. See also, for instance, <ref target="DHARMA_INSKanaganahalli00417.xml">KnI0417</ref>: <foreign>kaṁdamūlaphaḷanivāro</foreign>; <ref target="DHARMA_INSEIAD00200">EIAD 200</ref>, l. 2: <foreign>vetarakuḷo</foreign>. The orthography <foreign>uḷāra</foreign>, also attested in <ref target="DHARMA_INSKanaganahalli00072,xml">KnI0072</ref> and <ref target="DHARMA_INSKanaganahalli00127.xml">KnI0127</ref>, while distinct from the Aśokan <foreign>uḍāra</foreign> is identical to Pāli. See <bibl><ptr target="bib:CPD"/></bibl>, s.v.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>Āyuvadhanikaṁ</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><unclear>Ā</unclear>yuvadhanika</rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>culayānaṁ</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">c<unclear>u</unclear>l<supplied reason="lost">i</supplied>yāya</rdg>
+                     <note>If this corresponds to <foreign>cullaka</foreign>, then it would form a pair with <foreign>uḷāra</foreign>, as in Aśoka’s MRE 1F <foreign>khudakā uḍārā</foreign>. This and the next record would thus be unusual, in that the name of the donor would not feature.</note>
+                 </app>
+                 <app loc="2">
+                     <lem>deyadhaṁma</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">deyadhama</rdg>
+                 </app>
+                 <app loc="2">
+                     <lem>sasujiko</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">sasuciko</rdg>
+                 </app>
+                 <app loc="2">
+                     <lem>Imaṁ</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><unclear>no</unclear>maṁ<gap reason="lost" extent="unknown" unit="character"/></rdg>
+                     <note>who note: <quote>Following only the photo the word (i)maṁ read in MASI can be excluded, cf. <foreign>imān</foreign>, MASI p. 470, no. 155.</quote> The reading <foreign>Imaṁ</foreign> is in fact confirmed in <ref target="DHARMA_INSKanaganahalli00220.xml">KnI0220</ref>, l. 2.</note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>An upright, together with a cross-bar: this is the pious gift of the lower ones (?) in order to increase <supplied reason="subaudible">the</supplied> lifespan of the high up ones.</p>
+         </div>
+         <div type="commentary">
+             <p>See also <ref target="DHARMA_INSKanaganahalli00073.xml">KnI 73</ref>.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">60-61</citedRange>
+        	        <citedRange unit="section">II.4</citedRange>
+        	        <citedRange unit="item">2</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">450</citedRange>
+        	        <citedRange unit="item">4</citedRange>
+        	        <citedRange unit="plate">CXXX</citedRange>
+        	        <citedRange unit="item">4</citedRange>
+        	        <citedRange unit="plate"/>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

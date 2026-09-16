@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 11. Octagonal chattra-pillar fragment from the Kanaganahalli stūpa — reign of Gotamīputta Siri-Yaññasātakaṇṇi, year 10</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00011.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-18">Encoding of the translation</change>
+            <change who="part:fufa" when="2025-04-01">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><persName type="human" subtype="coronation"><supplied reason="lost">ya</supplied>ñasātakaṇ<unclear>i</unclear>sa</persName> saṁvachare <num value="10"><unclear><g type="numeral">10</g></unclear></num> gimhānaṁ<lb n="2"/><supplied reason="lost">pakhe</supplied> <unclear>5</unclear> <unclear>sa</unclear>t<unclear>i</unclear>ka<unclear>ṇa</unclear> mahadatasa dāna chata<lb n="3"/>mahācetiye <g ref="sym:dash" type="punctuation">.</g>
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="2">
+                     <lem><supplied reason="lost">pakhe</supplied> <unclear>5</unclear> <unclear>sa</unclear>t<unclear>i</unclear>ka<unclear>ṇa</unclear> mahadatasa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">ta<unclear>kā</unclear>na mahaḍatasa</rdg>
+                     <note>The individual mentioned here appears to be the same as <persName type="human">Sa(ṁ)tika Mahāsenadatta</persName>, occurring as donor in <ref target="DHARMA_INSKanaganahalli00099.xml">KnI0099</ref>, <ref target="DHARMA_INSKanaganahalli00100.xml">KnI0100</ref>. In <ref target="DHARMA_INSKanaganahalli00263.xml">KnI0263</ref>, the donor is similarly called <foreign>mahadata-</foreign>, which may be short for <persName type="human">Mahāsenadatta</persName>. Also, in both inscriptions, the ending <foreign>satikana</foreign>, as opposed to <foreign>satikena</foreign> in <ref target="DHARMA_INSKanaganahalli00100.xml">KnI0100</ref> (and probably in <ref target="DHARMA_INSKanaganahalli00099.xml">KnI0099</ref>) may be understood as standing for <foreign>satikāna</foreign>, a genitive plural of belonging.</note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>… In the 10th year of <supplied reason="subaudible">King</supplied> <persName type="human" subtype="coronation"><supplied reason="subaudible">Gotamīputta Siri-</supplied>Yaññasātakaṇṇi</persName>, in the 5th fortnight of summer. An umbrella for the <placeName type="builtPlace" subtype="temple">Great Shrine</placeName>: the gift of <persName type="human"><roleName type="unknown" subtype="donor">Mahādatta</roleName></persName> of the Sa(ṁ)tika <supplied reason="subaudible">family</supplied>.</p>
+         </div>
+         <div type="commentary">
+             <p>None of the three fragments reproduced in <bibl><ptr target="bib:Nakanishi+Hinuber2014_01"/></bibl> were documented by either Robert Arlt or Vincent Tournier. The identification of <bibl><ptr target="bib:Poonacha2011_01"/><citedRange unit="item">256</citedRange></bibl> as a fragment of the same inscribed object is due to Robert Arlt.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in April 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">35-36</citedRange>
+        	        <citedRange unit="section">I</citedRange>
+        	        <citedRange unit="item">11</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page"/>
+        	        <citedRange unit="item">256</citedRange>
+        	        <citedRange unit="plate"/>
+        	        <citedRange unit="item"/>
+        	        <citedRange unit="plate"/>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

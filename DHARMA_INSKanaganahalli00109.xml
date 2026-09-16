@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 109. Image of a seated Buddha from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00109.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-25">Encoding of the translation and commentary</change>
+            <change who="part:fufa" when="2025-05-06">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/>bhagavā bu<add place="inline">dho</add> vivasi <space quantity="1" unit="character"/> Upāsakena <space quantity="1" unit="character"/> vāgāḍhicānaṁ <space quantity="1" unit="character"/> visāghena <space quantity="1" unit="character"/> kārapito <space quantity="1" unit="character"/> saputakena sela<supplied reason="omitted">va</supplied>ḍhaki<unclear>sa</unclear><lb n="2"/>Āsadevasa <space quantity="1" unit="character"/> panatukena <space quantity="1" unit="character"/> samināgasa <space quantity="1" unit="character"/> nātukena <space quantity="1" unit="character"/> māḍhasa putena rayāmacena bodhigutena kato
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem>sela<supplied reason="omitted">va</supplied>ḍhaki<unclear>sa</unclear></lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">selaḍhaki<unclear>sa</unclear></rdg>
+                     <note>rightly commenting <quote>… the word <foreign><sic>selaḍhikasa</sic></foreign> is a mistake for <foreign>selavaḍhakisa</foreign>.</quote></note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>The Bhagavant, Buddha Vivassi (Skt. Vipaśyin), commissioned by the <foreign>upāsaka</foreign> Visāgha (Skt. Viśākha) of the Vāgāḍhica family, together with his son<supplied reason="subaudible">s</supplied>. Made by Bodigutta the royal officer, the son of Māḍha, grandson of Sāmināga, and great-grandson of Āsadeva, the sculptor.</p>
+         </div>
+         <div type="commentary">
+             <p>On the meaning of <foreign>amacca</foreign> (attested in <ref target="DHARMA_INSKanaganahalli00086.xml">KnI 86</ref>) and <foreign>rājāmacca</foreign> in early epigraphy, see the preliminary considerations of <bibl><ptr target="bib:Lielukhine2003_01"/></bibl>. That an artist is here provided with this distinguished status is not unheard of. <bibl><ptr target="bib:Tsukamoto1996_01"/><citedRange unit="item">Sanchi 384</citedRange></bibl>, records the donation of the personal foreman (<foreign>āvesani</foreign>) of King Siri-Sātakaṇṇi. On the title <foreign>āvesani</foreign>, see also <bibl><ptr target="bib:Tournier2020_02"/><citedRange unit="page">870</citedRange></bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">76-77</citedRange>
+        	        <citedRange unit="section">II.7</citedRange>
+        	        <citedRange unit="item">1</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">459</citedRange>
+        	        <citedRange unit="item">80</citedRange>
+        	        <citedRange unit="plate">CXXXVII</citedRange>
+        	        <citedRange unit="item">3</citedRange>
+        	        <citedRange unit="plate">CXXVIII</citedRange>
+        	        <citedRange unit="item">A</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl>
+                    <ptr target="bib:Lielukhine2003_01"/>
+                </bibl>
+                <bibl>
+                    <ptr target="bib:Tournier2020_02"/>
+                    <citedRange unit="page">870</citedRange>
+                </bibl>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

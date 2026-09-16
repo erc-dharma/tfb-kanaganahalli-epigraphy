@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 272. Two Buddhapāda fragments from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00272.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-07-27">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><supplied reason="lost">gotamip</supplied><milestone n="a" unit="fragment"/><unclear>uta</unclear>sa <space/> sir<unclear>i</unclear>v<unclear>ijaya</unclear><supplied reason="lost">sātaka</supplied><milestone n="b" unit="fragment"/><supplied reason="lost">ni</supplied>sa <space/> savachara <num value="4"><g type="numeral">4</g></num> <space/> gimhāna pākha <num value="2"><g type="numeral">2</g></num> <space/> <unclear>di</unclear> <gap reason="lost" quantity="1" unit="character"/> <gap reason="lost"/><lb n="2"/><gap reason="lost"/><milestone n="a" unit="fragment"/>ya <space/> budhāya ya sisi<gap reason="lost" quantity="5" unit="character"/><milestone n="b" unit="fragment"/><unclear>ya</unclear> <space/> sisiniA <space/> toḍhikheḍikāA <space/> pava<seg type="aksara"><unclear>y</unclear><seg type="component" subtype="vowel"><gap reason="lost" quantity="1" unit="component"/></seg></seg><gap reason="lost"/></p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="2">
+                     <lem>sisiniA</lem>
+                     <note>The meaning of this epithet, which might also occur previously in the lines is unclear. Could it correspond to Skt. <foreign xml:lang="san-Latn">svavāsinī</foreign>, which in much later Kumaunī is, according to <bibl><ptr target="bib:Turner1962-1966_01"/></bibl>, s.v. <foreign>sisiṇī</foreign> alongside <foreign>sīsṇī</foreign>?</note>
+                 </app>
+                 <app loc="2">
+                     <lem>pava<seg type="aksara"><unclear>y</unclear><seg type="component" subtype="vowel"><gap reason="lost" quantity="1" unit="component"/></seg></seg></lem>
+                     <note>This is likely to be restored <foreign>pavayit<supplied reason="lost">āya</supplied></foreign> or, perhaps less likely, <foreign>pavayit<supplied reason="lost">asa</supplied></foreign>.</note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>In the 4th year of <supplied reason="subaudible">king</supplied> Gotamīputta Siri-Vijayasātakaṇṇi, in the 2nd fortnight of summer, on the … day … <supplied reason="lost">gift of</supplied> … and Buddhā, the wife <supplied reason="explanation" cert="low">sisiṇī</supplied>, <supplied reason="subaudible">and</supplied> ... the wife <supplied reason="explanation" cert="low">sisiṇī</supplied>, <supplied reason="subaudible">and</supplied> Toḍhikheḍikā, the nun <supplied reason="explanation" cert="low">pavayitā</supplied>…</p>
+         </div>
+         <div type="commentary">
+             <p/>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in July 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl/>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 37. Pupphagahani from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00037.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-28">Encoding of the translation</change>
+            <change who="part:fufa" when="2025-04-28">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><unclear>s</unclear>idha <g ref="sym:doubleBar" type="punctuation">.</g> dhamakadhikasa <space quantity="1" unit="character"/> nāgasi<supplied reason="omitted">ri</supplied>sa <space unit="character" quantity="1"/> dejadhama <space quantity="1" unit="character"/> sa<supplied reason="lost">ha</supplied></p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem><unclear>s</unclear>idha</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">s<unclear>i</unclear>dham</rdg>
+                     <note>who refer to a <quote>rare <foreign>virāma</foreign> written as a vertical stroke above the <foreign>akṣara dha</foreign>.</quote> See also <bibl><ptr target="bib:Nakanishi+Hinuber2014_01"/><citedRange unit="page">14</citedRange></bibl>. What looks like a (horizontal) stroke in the picture reproduced by them is in fact a crack in the stone.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>sa<supplied reason="lost">ha</supplied></lem>
+                     <note>Reconstructed on the basis of the exact parallel, <ref target="DHARMA_INSKanaganahalli00038.xml">KnI 38</ref>.</note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>Success! The pious gift of the expounder of the Dharma Nāgasiri, together with …</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in April 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">50</citedRange>
+        	        <citedRange unit="section">II.2</citedRange>
+        	        <citedRange unit="item">18</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">474</citedRange>
+        	        <citedRange unit="item">206</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

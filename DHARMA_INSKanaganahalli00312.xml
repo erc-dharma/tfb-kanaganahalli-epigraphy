@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 312. Octagonal pillar fragment from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                    <persName>
+                        <forename>Robert</forename>
+                        <surname>Arlt</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00312.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-08-01">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><supplied reason="lost">gi</supplied><unclear>mh</unclear><supplied reason="lost">ā</supplied>na <space/> pakh<unclear>e</unclear> 6 <space/> d<unclear>i</unclear><supplied reason="lost">vasa</supplied><lb n="2"/><gap reason="lost"/> <unclear>ra</unclear>peḍhīkā <gap reason="lost"/><lb n="3"/><gap reason="lost"/> <unclear>la</unclear>chiya <space/> bo <gap reason="illegible" unit="character" quantity="1"/> <seg type="aksara"><seg type="component" subtype="body"><gap reason="lost" quantity="1" unit="component"/></seg>i</seg> <gap reason="lost"/><lb n="4"/><gap reason="lost"/> gahi <gap reason="lost"/></p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="2">
+                     <lem><unclear>ra</unclear>peḍhīkā</lem>
+                     <note>On <foreign>peḍhikā/peḍhīkā</foreign>, see <ref target="DHARMA_INSKanaganahalli00278.xml">KnI0278</ref>. The reconstruction of this compound that would allow some hint of the object to which this fragment originally belongs is unclear. Compare <ref target="DHARMA_INSKanaganahalli00289.xml">KnI0289</ref>: <foreign>padapaṭapeḍhikā</foreign>; <ref target="DHARMA_INSKanaganahalli00278.xml">KnI0278</ref>:    <foreign>bodhirukhapeḍhikā<space/>c<unclear>e</unclear>tiA</foreign>.</note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p/>
+         </div>
+         <div type="commentary">
+             <p/>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in August 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl/>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

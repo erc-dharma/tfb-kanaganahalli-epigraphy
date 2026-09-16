@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 90. Ālaṁbana from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00090.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-07-06">Encoding of the translation</change>
+            <change who="part:fufa" when="2025-05-23">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><gap reason="lost" extent="unknown" unit="character"/><unclear>r</unclear>akhitanikāya duhutuya sāmaṁnikāya deyadhamaṁ</p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem><gap reason="lost" extent="unknown" unit="character"/><unclear>r</unclear>akhitanikāya</lem>
+                     <note>Cf. <ref target="DHARMA_INSKanaganahalli00222.xml">KnI0222</ref>, ll. 1–2: <foreign>budharakhitānikāya</foreign>.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>sāmaṁnikāya</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">s<unclear>ā</unclear>manikāya</rdg>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>Pious gift of Sāmaṇṇikā, the daughter of -rakkhitā.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">66</citedRange>
+        	        <citedRange unit="section">II.4</citedRange>
+        	        <citedRange unit="item">20</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">452</citedRange>
+        	        <citedRange unit="item">20</citedRange>
+        	        <citedRange unit="plate">CXXXI</citedRange>
+        	        <citedRange unit="item">11</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

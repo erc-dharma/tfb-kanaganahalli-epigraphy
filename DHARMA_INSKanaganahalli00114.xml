@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 114. Image of a seated Buddha from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00114.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-25">Encoding of the translation and apparatus</change>
+            <change who="part:fufa" when="2025-06-08">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/>sidha bhagavaṁ samasaṁ<space/>budh<subst><del rend="corrected">aṁ</del><add place="overstrike">o</add></subst> <space/> kasapaṁ <space/> vākāṭicāna <space/> visākanena saputakena kār<unclear>i</unclear><supplied reason="omitted">to</supplied> </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem>bhagavaṁ samasaṁ<space/>budho<del>ṁ</del></lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">bhagava samasabudho</rdg>
+                     <note>The vocalic marker <foreign>o</foreign> in the last syllable seems to have been added secondarily, under an <foreign>anusvāra</foreign> sign.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>kasapaṁ</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">kasapā</rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>visākanena</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">visākena</rdg>
+                     <note>Understand <foreign>visākena</foreign>.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>kār<unclear>i</unclear><supplied reason="omitted">to</supplied> </lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">kār<unclear>i</unclear><supplied reason="lost">to</supplied></rdg>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>Success! The Bhagavant, Perfectly and Completely Awakened One Kassapa (Skt. Kāśyapa), commissioned by the <foreign>upāsaka</foreign> Visāgha (Skt. Viśākha) of the Vāgāḍhica family, together with his son<supplied reason="subaudible">s</supplied>.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in June 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">79</citedRange>
+        	        <citedRange unit="section">II.7</citedRange>
+        	        <citedRange unit="item">6</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">460</citedRange>
+        	        <citedRange unit="item">83</citedRange>
+        	        <citedRange unit="plate">CXXXVII</citedRange>
+        	        <citedRange unit="item">6</citedRange>
+        	        <citedRange unit="plate">CXXVII</citedRange>
+        	        <citedRange unit="item">A</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

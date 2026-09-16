@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 71. Vedikā pillar from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00071.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-07-05">Encoding of the translation and commentary</change>
+            <change who="part:fufa" when="2025-05-22">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><unclear>bho</unclear>gava<unclear>dha</unclear>nakasa bodhigahapatino<lb n="2"/><supplied reason="lost">pu</supplied>tasa Isimitasa pāyako sa<lb n="3" break="no"/><supplied reason="lost">s</supplied>uciko saĀlaṁbano deyadhama
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem><unclear>bho</unclear>gava<unclear>dha</unclear>nakasa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><supplied reason="lost">bh</supplied><unclear>o</unclear>gavadhanikasa</rdg>
+                 </app>
+                 <app loc="2">
+                     <lem><supplied reason="lost">pu</supplied>tasa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><supplied reason="lost">va</supplied>ṇ<supplied reason="lost">ika</supplied>sa</rdg>
+                 </app>
+                 <app loc="3">
+                     <lem>saĀlaṁbano</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">saĀlabano</rdg>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>An upright, together with a cross-bar and a coping: the pious gift of Isimitta, the son of the notable Bodhi from Bhogavaḍḍhana.</p>
+         </div>
+         <div type="commentary">
+             <p>The editors doubt <bibl><ptr target="bib:Poonacha2011_01"/></bibl>’s suggestion (<bibl><ptr target="bib:Poonacha2011_01"/><citedRange unit="page">169</citedRange><citedRange unit="page">471</citedRange></bibl>) that the term <foreign>ālambana</foreign> points to the coping. See also <bibl><ptr target="bib:Nakanishi+Hinuber2014_01"/><citedRange unit="page">16</citedRange><citedRange unit="page">60</citedRange></bibl>. Yet the word <foreign>ālaṁbana</foreign> occurs in <ref target="DHARMA_INSKanaganahalli00231.xml">KnI0231</ref>, which is of the very same type as the objects bearing <ref target="DHARMA_KnI00085.xml">KnI0085</ref>–<ref target="DHARMA_INSKanaganahalli00091.xml">91</ref>: these are edited under the heading <foreign>uṣṇīṣa</foreign>. Yet it is striking that the MIA <foreign>unisa</foreign>—or any other MIA form corresponding to Skt. <foreign xml:lang="san-Latn">uṣṇīṣa</foreign>—common, for instance, in the Amaravati corpus is nearly absent from the Kanaganahalli corpus, as it is, for instance, in Sarnath, and that the single occurrence of the term <foreign>Uṁnisa</foreign> (<ref target="DHARMA_KnI00044">KnI0044</ref>) occurs on a <foreign>puphagahani</foreign> and may point to a part of the casing. The term <foreign>āla(ṁ)bana</foreign> moreover occurs once on ca. 1st-c. BCE piece of “rail stone” found in Sarnath. See ASI–AR 1906–1907<!-- we need this in zotero library -->: 95 (<bibl><ptr target="bib:Tsukamoto1996_01"/><citedRange unit="item">Sarn 85</citedRange></bibl>). On the basis of the designation <foreign>āla(ṁ)bana</foreign>, Sten Konow who based his reading on the rubbing (<bibl><ptr target="bib:Marshal+Konow1911_01"/><citedRange unit="plate">XXX</citedRange></bibl>) assumed that <quote>this stone was originally the lower horizontal stone of a rail.</quote> But the object is described as a <quote>coping stone … with rounded edge at the the top</quote> in Sahni’s catalogue of the Sarnath museum (1914: 214–215, no. D(a) 39)<!-- we need this in zotero library -->. Sahni further adds that <quote>[i]t is curious that in the epigraph the coping stone is referred to as a base stone.</quote> <ref target="DHARMA_INSKanaganahalli00231.xml">KnI0231</ref> now proves that this is not an isolated case, and that <foreign>ālaṁbana</foreign> can not mean, in the context of Kanaganahalli or Sarnath, “base stone.” In the Mahāvastu, the term <foreign>ālambana</foreign> occurs alongside <foreign>adhiṣṭhānaka</foreign> as a qualifier of <foreign>sūcika</foreign>, the cross-bars fixed on the uprights (<foreign>pādaka</foreign>) in the description of the railings surrounding the city of Dīpavatī. See Mvu (S) I.194.20–195.4 / Ms. Sa, 54a3–5; Mvu (S) III.227.7–13 / (M) III.282.8–13. See also Divy 221.9–10. In light of the evidence Kanaganahalli, Edgerton’s understanding of <foreign>ālambana</foreign> (<bibl><ptr target="bib:Edgerton1953_01"/></bibl>, s.v. [3]), should be revised: in these passages, while the <foreign>adhiṣṭhānaka</foreign> would point to the base of the <foreign>vedikā</foreign>, the <foreign>ālambana</foreign> could point to the crowning element holding together the railing.</p>
+             <p>On Bhogavaḍḍhana (Skt. Bhogavardhana), present day Bhokardan (Jalna distt., Maharashtra) see <bibl><ptr target="bib:Nakanishi+Hinuber2014_01"/><citedRange unit="page">16</citedRange><citedRange unit="page">60</citedRange></bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">60</citedRange>
+        	        <citedRange unit="section">II.4</citedRange>
+        	        <citedRange unit="item">1</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">452</citedRange>
+        	        <citedRange unit="item">16</citedRange>
+        	        <citedRange unit="plate">CXXXI</citedRange>
+        	        <citedRange unit="item">6</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl>
+                    <ptr target="bib:Tsukamoto1996_01"/>
+                    <citedRange unit="item">Sarn 85</citedRange>
+                </bibl>
+                <bibl>
+                    <ptr target="bib:Marshal+Konow1911_01"/>
+                    <citedRange unit="plate">XXX</citedRange>
+                </bibl>
+                <bibl>
+                    <ptr target="bib:Edgerton1953_01"/>
+                </bibl>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

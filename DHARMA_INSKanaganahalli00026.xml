@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 26. Pupphagahani from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00026.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-21">Encoding of the commentary</change>
+            <change who="part:vito" when="2025-04-01">Fixed translation</change>
+            <change who="part:fufa" when="2025-04-01">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p>
+                 <lb n="1"/>manikārasa mahamar<unclear>i</unclear>tino sabhāriyasa saputakasa sadu<unclear>h</unclear><supplied reason="lost">utakasa</supplied> <unclear>sajā</unclear>mātukasa dāna cetiya pu<unclear>pha</unclear>gaha
+                 <lb n="2" break="no"/>nik<unclear>a</unclear>
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1-2">
+                     <lem>cetiya pu<unclear>pha</unclear>gahanika</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><unclear>cetiyapu</unclear><supplied reason="lost">pha</supplied><unclear>gaha</unclear><supplied reason="lost">ni</supplied></rdg>
+                     <note>who seem to have missed the two <foreign>akṣaras</foreign> engraved below line 1, for lack of space.</note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>A shrine<supplied reason="subaudible">-bearing slab and a?</supplied> <foreign>pupphagahani</foreign>: the gift of the jeweller Mahāmariti, together with his wife, his son<supplied reason="subaudible">s</supplied>, his daughter<supplied reason="subaudible">s</supplied>, and his son<supplied reason="subaudible">s</supplied>-in law.</p>
+         </div>
+         <div type="commentary">
+             <p>As remarked by <bibl><ptr target="bib:Nakanishi+Hinuber2014_01"/><citedRange unit="page">47</citedRange></bibl>, Mahāmariti occurs as the donor of a drum-slab bearing a representation of a shrine and referred to as <foreign>cediya</foreign> in <ref target="DHARMA_INSKanaganahalli00093.xml">KnI0093</ref>. Here, the <foreign>pupphagahani</foreign> does not bear any such representation, so the meaning of <foreign>cetiya pu<unclear>pha</unclear>gahanika</foreign> is a bit puzzling. I therefore suppose this phrasing may jointly refer to the two structural elements dedicated by the donor, and translate accordingly.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in April 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">47</citedRange>
+        	        <citedRange unit="section">II.2</citedRange>
+        	        <citedRange unit="item">7</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">456</citedRange>
+        	        <citedRange unit="item">65b</citedRange>
+        	        <citedRange unit="plate">CXXXV</citedRange>
+        	        <citedRange unit="item">8</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

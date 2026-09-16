@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 10. Vedikā pillar from the Kanaganahalli stūpa — reign of Vāsiṭṭhīputta Siri-Sātakaṇṇi, year 6</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00010.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-06">Encoding of the translation</change>
+            <change who="part:fufa" when="2025-05-07">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><supplied reason="lost">sidhaṁ <space/></supplied> r<supplied reason="lost">a</supplied>ñ<supplied reason="lost">o</supplied> <persName type="human" subtype="coronation">v<unclear>ā</unclear>siṭh<unclear>ī</unclear>putasa <space/> s<unclear>i</unclear>ris<unclear>ā</unclear>dakaṇi<unclear>sa</unclear></persName> <space/> <unclear>sa</unclear>va<unclear>cha</unclear>r<unclear>e</unclear> <num value="6"><unclear>6</unclear></num> <space/> gi<unclear>mh</unclear>āṇa pakha <num value="4">4</num> <space/> divasa <num value="5">5</num> Utarāhakena <space/> sathavāhena <space/> <persName type="human"><roleName type="merchant" subtype="donor">sama<unclear>ṇe</unclear>na</roleName></persName> <space/> U<unclear>j</unclear>ukā patā <space/> catāri ca pāyakā <space/> <unclear>de</unclear>ya<unclear>dhama</unclear><lb n="2"/>savabudhapūcāya <space/> mātāpituno <space/> pūcāya <space/> savalokahi<supplied reason="lost">ta</supplied><unclear>s</unclear>ughāya
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem>v<unclear>ā</unclear>siṭh<unclear>ī</unclear>putasa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">v<supplied reason="lost">ā</supplied>s<supplied reason="lost">ī</supplied>ṭh<supplied reason="lost">i</supplied>pu<unclear>tasa</unclear></rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>s<unclear>i</unclear>ris<unclear>ā</unclear>dakaṇi<unclear>sa</unclear></lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">s<unclear>i</unclear>r<unclear>i</unclear> sadakan<unclear>i</unclear><supplied reason="lost">sa</supplied></rdg>
+                 </app>
+                 <app loc="1">
+                     <lem><unclear>sa</unclear>va<unclear>cha</unclear>r<unclear>e</unclear></lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><supplied reason="lost">savacha</supplied>r<unclear>a</unclear></rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>gi<unclear>mh</unclear>āṇa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">gi<unclear>mh</unclear>āna</rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>sama<unclear>ṇe</unclear>na</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">sama<unclear>l</unclear><supplied reason="lost">e</supplied>ṇa</rdg>
+                     <note>The editors’ comparison, to argue against the reading <foreign>ṇe</foreign> of the third <foreign xml:lang="san-Latn">akṣara</foreign> in <bibl><ptr target="bib:Poonacha2011_01"/></bibl>, of the <foreign xml:lang="san-Latn">akṣara</foreign> with <foreign>lo</foreign> in l. 2 is not convincing.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>U<unclear>j</unclear>ukā patā</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">U<unclear>d</unclear>uk<unclear>o</unclear>pat<unclear>o</unclear></rdg>
+                     <note>Their remark that <quote>the reading <foreign>uju-</foreign> [proposed by MASI] can safely be ruled out</quote> is incorrect, in light of the new documentation. Indeed, while the middle horizontal stroke of the <foreign>ja</foreign> is faint, it is nonetheless visible. Cf. <bibl><ptr target="bib:Nakanishi+Hinuber2014_01"/><citedRange unit="page">16</citedRange></bibl>.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>pāyakā</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">pāyaka</rdg>
+                 </app>
+                 <app loc="2">
+                     <lem>savabudhapūcāya</lem><!-- this lemma doesn't match with the edition -->
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">savabudhap<unclear>u</unclear>cāya</rdg>
+                     <note>This reading is confirmed by the next occurrence of <foreign xml:lang="pra-Latn">pūcāya</foreign>, for <foreign xml:lang="pra-Latn">pūjāya</foreign>.</note>
+                 </app>
+                 <app loc="2">
+                     <lem>mātāpituno</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">mātāpituna</rdg>
+                 </app>
+                 <app loc="2">
+                     <lem>pūcāya</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">puyāya</rdg>
+                 </app>
+                 <app loc="2">
+                     <lem>savalokahi<supplied reason="lost">ta</supplied><unclear>s</unclear>ughāya</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">savalokah<supplied reason="lost">ita</supplied><unclear>s</unclear>ughāya</rdg>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>Success! In the 6th year of King <persName type="human" subtype="coronation">Vāsiṭṭhīputta Siri-Sātakaṇṇi</persName>, on the 4th fortnight of the hot season, on the 5th day. A straight slab and four uprights are a pious gift <supplied reason="subaudible">made</supplied> by  the caravan leader <persName type="human"><roleName type="merchant" subtype="donor">Samaṇa</roleName></persName> (Skt. <foreign xml:lang="san-Latn">Śramaṇa</foreign>?), in honour of all buddhas, in honour of his father and mother, and for the well-being and happiness of the whole world.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">34-35</citedRange>
+        	        <citedRange unit="section">I</citedRange>
+        	        <citedRange unit="item">10</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">451</citedRange>
+        	        <citedRange unit="item">15</citedRange>
+        	        <citedRange unit="plate">CXXXI</citedRange>
+        	        <citedRange unit="item">5</citedRange>
+        	        <citedRange unit="plate">CXLVI</citedRange>
+        	        <citedRange unit="item">A-C</citedRange>
+        	    </bibl>
+        	    <bibl>
+        	        <ptr target="bib:ARIE2014-2015"/>
+        	        <citedRange unit="item">B.81</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

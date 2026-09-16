@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 3. Upper part of a Kañcūka from the Kanaganahalli stūpa — reign of Chimuka, year 16</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00003.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/> 
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-04-03">Initial Encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+            <p><lb n="1"/><milestone n="A" unit="fragment"/>raño <persName type="human" subtype="coronation">sirichimu<unclear>ka</unclear>sātavāhanasa</persName> savachare soḍe <num value="16"><g type="numeral">10</g> 6</num> <placeName type="region" subtype="country">māhiseka<milestone n="B" unit="fragment"/>sa</placeName> gahapatinā <persName type="human"><roleName type="unknown" subtype="donor">toḍesa</roleName></persName> <persName type="human">cana</persName>gahapatiputesa sabhāriyesa sa<supplied reason="lost">bhag</supplied>inikesa <milestone n="C" unit="fragment"/>saputasa sajāmātusa sasunhasa sagotasa saduhu<supplied reason="lost" evidence="parallel">takasa sanatukasa</supplied> <milestone n="D" unit="fragment"/>kacūkā deyadhaṁma<unclear>ṁ</unclear> dānaṁ</p>
+         </div>
+         <div type="apparatus">
+               <listApp>
+                  <app loc="A-B">
+                     <lem>māhisekasa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">mātisekasa</rdg><note>The shape of the <foreign>h</foreign> is peculiar, being more angular than the others in this inscription, but it is still comparable to that found in <foreign xml:lang="pra-Latn">saduhu<supplied reason="lost">takasa</supplied></foreign>. And its shape is markedly distinct from the <foreign>ta</foreign> in <foreign xml:lang="pra-Latn">-sātavāhanasa</foreign>. It is clear that a <foreign>hi</foreign> was meant.</note>
+                  </app>
+                  <app loc="B">
+                      <lem>gahapatinā</lem>
+                      <note>Understand <foreign xml:lang="pra-Latn">gahapatino</foreign>. The hand active on this slab is distinct from the one of part A. In fact, four different hands may have engraved the four parts of the record. The hand active in part B looks more cursive and less expert than the others, which perhaps explains the further irregularities in the ending of all following words.</note>
+                  </app>
+                  <app loc="B">
+                      <lem><persName type="human"><roleName type="unknown" subtype="donor">toḍesa</roleName></persName> <persName type="human">cana</persName>gahapatiputesa</lem>
+                      <note>The left horizontal stroke on top of the <foreign>ḍa</foreign> looks like the marker of a <foreign>e</foreign>, and a similar (and similarly unexpected) sign is found in the penultimate consonant of the three following words. I suggest the four <foreign>e</foreign> should be understood as superfluous. The previous editors, because they read <foreign xml:lang="pra-Latn">māhisekasa</foreign> as <foreign xml:lang="pra-Latn">mātisekasa</foreign>, which they understood as a proper name, struggled to make sense of these two names. For a discussion of the name <persName type="human">Toḍa</persName>, see <bibl><ptr target="bib:Tournier2021-2022_01"/><citedRange unit="page">27</citedRange><citedRange unit="note">75</citedRange></bibl>. As for the name <persName type="human">Cana</persName>, it may be understood as Dravidian <foreign>canna/cenna</foreign>, meaning (according to <bibl><ptr target="bib:Burrow+Emeneau1984_01"/></bibl>, s.v.)<!--correct the this later--> <quote>a man of beauty, a handsome man.</quote></note>
+                  </app>
+                  <app loc="B">
+                      <lem>sa<supplied reason="lost">bhag</supplied>inikesa</lem>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">sa<gap reason="lost" extent="unknown" unit="character"/></rdg>
+                  </app>
+                  <app loc="D">
+                      <lem>saduhu<supplied reason="lost">takasa sanatukasa</supplied></lem>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">saduhu<supplied reason="lost">takasa</supplied></rdg>
+                      <note>My reconstruction <foreign xml:lang="pra-Latn">sanatukasa</foreign> is speculative, but it fits the number of missing <foreign xml:lang="san-Latn">akṣaras</foreign>. In several inscriptions from Amaravati, the mention of the donor’s daughter(s) is immediately followed by that of grandchildren. See <ref target="DHARMA_INSEIAD00272.xml">EIAD 272</ref>, ll. 4–5; <ref target="DHARMA_INSEIAD00286.xml">EIAD 286</ref>, ll. 2–3. Moreover, the presence of children (possibly grandchildren) in <persName type="human">Toḍa</persName>’s family is confirmed by the portrait occurring on one of the dome slabs. See <bibl><ptr target="bib:Hinuber2018_01"/><citedRange unit="page">358-360</citedRange><citedRange unit="figure">1</citedRange><citedRange unit="note">75</citedRange></bibl>. I don’t think that the absence of the marks of old age necessarily excludes that three generations were represented.</note>
+                  </app>
+                  <app loc="D">
+                      <lem>deyadhaṁma<unclear>ṁ</unclear> dānaṁ</lem>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">deyadhamadāna</rdg>
+                      <note>The previous editors remark that <quote>the expression <foreign xml:lang="pra-Latn">deyadhamadāna</foreign> might occur once again in a damaged inscription at Amarāvatī (<bibl><ptr target="bib:Tsukamoto1996_01"/><citedRange unit="item">II Amar 15</citedRange><citedRange unit="line">4</citedRange></bibl>): <foreign xml:lang="pra-Latn">deyadhamad<supplied reason="lost" cert="low">āna</supplied>...</foreign> .</quote><!-- the citation may needs rework --> The new reading of this inscription by Griffiths and I (<ref target="DHARMA_INSEIAD00267.xml">EIAD 267</ref>, l. 3) reads instead ... <foreign xml:lang="pra-Latn"><unclear>de</unclear>yadhaṁma <space/> <unclear>pa</unclear>tiṭhapita ...</foreign> <ref target="DHARMA_INSEIAD00305.xml">EIAD 305</ref>, l. 3, by contrast, does have the two expressions in combination: <foreign xml:lang="pra-Latn">... deyadhamaparicakā be suciya dānā</foreign>. See also <ref target="DHARMA_INSEIAD00266.xml">EIAD 266</ref>.</note>
+                  </app>
+               </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+            <p>In the sixteenth–16th–year of <persName type="human" subtype="coronation">King Siri-Chimuka, the Sātavāhana</persName>. The encasing slabs are the pious offering, the gift of the notable <supplied reason="explanation"><foreign>gahapati</foreign></supplied> <persName type="human"><roleName type="unknown" subtype="donor">Toḍa</roleName></persName>, son of the notable <persName type="human">Cana</persName>, from <placeName type="region" subtype="country">Mahisaka</placeName>, together with his wife, his sister<supplied reason="subaudible">s</supplied>, his son<supplied reason="subaudible">s</supplied>, his son<supplied reason="subaudible">s</supplied>-in-law, his daughter<supplied reason="subaudible">s</supplied>-in-law, his clan, his daughter<supplied reason="subaudible">s</supplied> <supplied reason="lost">and his grandchildren</supplied>.</p>
+         </div>
+        <div type="bibliography">
+           <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in April 2025.</p>
+        	<listBibl type="primary">
+				<bibl n="N+vH">
+				    <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+				    <citedRange unit="section">I</citedRange>
+				    <citedRange unit="item">3</citedRange>
+				    <citedRange unit="section">IV</citedRange>
+				    <citedRange unit="item">9</citedRange>
+				    <citedRange unit="section">IV</citedRange>
+				    <citedRange unit="item">2</citedRange>
+				    <citedRange unit="section">II.4</citedRange>
+				    <citedRange unit="item">22</citedRange>
+				</bibl>
+        	    <bibl>
+        	        <ptr target="bib:Tournier2021-2022_01"/>
+        	        <citedRange unit="page">26-27</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">464</citedRange>
+        	        <citedRange unit="item">101</citedRange>
+        	        <citedRange unit="plate">CXXXIX</citedRange>
+        	        <citedRange unit="item">a-d</citedRange>
+        	        <citedRange unit="plate">CXLIII</citedRange>
+        	        <citedRange unit="item">A-D</citedRange>
+        	    </bibl>
+			</listBibl>
+           <listBibl type="secondary">
+              <bibl/>
+           </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

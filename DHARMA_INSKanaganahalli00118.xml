@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 118. Pedestal of a standing Buddha image from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00118.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-25">Encoding of the translation and apparatus</change>
+            <change who="part:fufa" when="2025-05-03">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><milestone type="pagelike" unit="face" n="A"/><lb n="A.1"/>dāraghāḍhikehi bhagavato<lb n="A.2"/>budhasa paḍimā k<choice><sic>a</sic><corr>ā</corr></choice>rit<unclear>ā</unclear><milestone type="pagelike" unit="face" n="B"/><lb n="B.1"/><supplied reason="lost">A</supplied><unclear>s</unclear><supplied reason="lost">a</supplied>bhūtina Upajhāyāna natukena veṇh<unclear>u</unclear>na Upajhāyāna<lb n="B.2"/>putena nādikeṇa <space unit="character" quantity="1"/> kato
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="B.1">
+                     <lem><supplied reason="lost">A</supplied><unclear>s</unclear><supplied reason="lost">a</supplied>bhūtina</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><unclear>sabhū</unclear>tina</rdg>
+                     <note>Cf. <ref target="DHARMA_INSKanaganahalli00054">KnI0054</ref>: <foreign>Asabhūtino</foreign>.</note>
+                 </app>
+                 <app loc="B.1">
+                     <lem>Upajhāyāna</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">Upajhāyena</rdg>
+                     <note>As pointed out by the previous editors, <foreign>upajhāya</foreign> means here a master craftsman. The fact that both strings <foreign>-bhūtina upajhāyāna</foreign> and <foreign>veṇh<unclear>u</unclear>na upajhāyāna</foreign> are in the Gen. Pl. is a clear use of <foreign>pluralis maiestatis</foreign>, and might point to <foreign>Nādika</foreign>’s ancestors to be departed.</note>
+                 </app>
+                 <app loc="B.1">
+                     <lem>veṇh<unclear>u</unclear>na</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">ve<unclear>nena</unclear></rdg>
+                     <note>Cf. <ref target="DHARMA_INSEIAD00049">EIAD 49, l. 2</ref>: <foreign>veṇhusiri<unclear>ṇo</unclear></foreign>.</note>
+                 </app>
+                 <app loc="B.1">
+                     <lem>Upajhāyāna</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">Upajh<unclear>āy</unclear><supplied reason="lost">e</supplied>na</rdg>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>The people from Dāraghāḍha commissioned this image of the Bhagavant, the Buddha. Made by Nādika, the son of the master <supplied reason="subaudible">sculptor</supplied> Veṇhu, grandson of the master <supplied reason="subaudible">sculptor</supplied> Assabhūti.</p>
+         </div>
+         <div type="commentary">
+             <p>The possible toponym Dāraghāḍha, from which the collective of donors stems, is otherwise unknown, although it brings to mind Dvārakā in Kathiawar, which is mentioned for instance in the Petavatthu and in the Periplus. See <bibl><ptr target="bib:Sircar1971_02"/><citedRange unit="page">197, 225</citedRange></bibl>.
+As remarked by <bibl><ptr target="bib:Nakanishi+Hinuber2014_01"/><citedRange unit="page">81</citedRange></bibl>, <foreign>upajjhāya</foreign> is used here not in its Buddhist meaning, but pointing to a master artisan, as in <ref target="DHARMA_INSEIAD00322.xml">EIAD 322</ref>: <foreign>caṁmakārasa nāgaUpajhayaputasa vidhikasa…</foreign>.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">80-81</citedRange>
+        	        <citedRange unit="section">II.7</citedRange>
+        	        <citedRange unit="item">10</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">461</citedRange>
+        	        <citedRange unit="item">87</citedRange>
+        	        <citedRange unit="plate">CXXXVIII</citedRange>
+        	        <citedRange unit="item">1a</citedRange>
+        	        <citedRange unit="item">1b</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl>
+                    <ptr target="bib:Sircar1971_02"/>
+                    <citedRange unit="page">197, 225</citedRange>
+                </bibl>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

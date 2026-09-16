@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 103. Buddhapāda from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00103.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-05-05">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><unclear>s</unclear><supplied reason="lost">i</supplied>dhaṁ <space quantity="1" unit="character"/> therāna bhayatabudhatātānaṁ Atavāsisa <unclear>bha</unclear>yatasihasa deyadhama pa<supplied reason="lost">yapaṭo</supplied><lb n="2"/>mahācetiE <space quantity="1" unit="character"/> saha AcāriyaUpajhaEhi <space quantity="1" unit="character"/> saha <space quantity="1" unit="character"/> mātāpitahi <space quantity="1" unit="character"/> saha va Ate<unclear>v</unclear>ā<lb n="3" break="no"/>sikehi <space quantity="1" unit="character"/> lo<unclear>takhā</unclear>va<unclear>h</unclear><seg type="component" subtype="vowel"><gap reason="lost" unit="component" quantity="1"/></seg> <gap reason="lost" quantity="1" unit="character"/>
+             </p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem>Atavāsisa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">A<supplied reason="lost">te</supplied><unclear>vāsisa</unclear></rdg>
+                     <note>Understand <foreign>atevāsisa</foreign>.</note>
+                 </app>
+                 <app loc="1">
+                     <lem><unclear>bha</unclear>yatasihasa</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01"><unclear>bha</unclear>yata sihasa</rdg>
+                 </app>
+                 <app loc="2">
+                     <lem>mahācetiE</lem>
+                     <note>The first <foreign>akṣara</foreign> could be read <foreign>mā</foreign>.</note>
+                 </app>
+                 <app loc="2">
+                     <lem>AcāriyaUpajhaEhi</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">Ā<unclear>ca</unclear>riyaUpajhāEhi</rdg>
+                     <note>Understand <foreign>-upajhāEhi-</foreign>, as in <ref target="DHARMA_INSKanaganahalli00103.xml">KnI0103</ref>.</note>
+                 </app>
+                 <app loc="2">
+                     <lem>saha <space quantity="1" unit="character"/></lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">saha <supplied reason="lost">ca</supplied></rdg>
+                 </app>
+                 <app loc="3">
+                     <lem>lo<unclear>takhā</unclear>va<unclear>h</unclear><seg type="component" subtype="vowel"><gap reason="lost" unit="component" quantity="1"/></seg> <gap reason="lost" quantity="1" unit="character"/></lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">l<unclear>o</unclear><gap reason="lost" unit="character" quantity="1"/><unclear>kh</unclear>āva<unclear>h</unclear><supplied reason="lost">āya</supplied></rdg>
+                     <note>tentatively suggesting to reconstruct <foreign>lo<supplied reason="omitted">ka</supplied>sukhāvahāya</foreign>. In light of the close parallel in <ref target="DHARMA_KnI00104">KnI0104</ref>, the <foreign>akṣara</foreign> <foreign>lo</foreign> may be considered a copying mistake for <foreign><unclear>hi</unclear></foreign>, in which case the reconstruction <foreign>hi<unclear>ta</unclear><supplied reason="omitted">su</supplied><unclear>khā</unclear>v<choice><sic>a</sic><corr>ā</corr></choice><supplied reason="lost">hāya</supplied></foreign> may be suggested. The shapes of the <foreign>akṣaras</foreign> read here as <foreign><unclear>ta</unclear></foreign> and <foreign><unclear>khā</unclear></foreign> remain rather peculiar.</note>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>Success! A slab with foot<supplied reason="subaudible">prints</supplied>: the pious gift at the Great Shrine of reverend Siṁha, pupil of the venerable reverend Buddhattāta, together with his teacher and preceptor, with his father and mother, and also with his pupils, leading to well-being and happiness.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="N+vH">
+        	        <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+        	        <citedRange unit="page">73</citedRange>
+        	        <citedRange unit="section">II.6</citedRange>
+        	        <citedRange unit="item">1</citedRange>
+        	    </bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">462</citedRange>
+        	        <citedRange unit="item">91</citedRange>
+        	        <citedRange unit="plate">CXXXVIII</citedRange>
+        	        <citedRange unit="item">5</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

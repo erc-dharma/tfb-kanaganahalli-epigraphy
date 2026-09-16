@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 274. Buddhapāda from the Kanaganahalli stūpa</title>
+                <respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00273.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-05-12">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+             <p><lb n="1"/><g ref="sym:san-nandyavarta" type="symbol">*</g> <supplied reason="lost">si</supplied><unclear>dha</unclear> bodhiparigāhakasa vāṇiyasa budhila<space/>sa payasaghādo deyadhama <g ref="sym:san-svastika" type="symbol">*</g></p>
+         </div>
+         <div type="apparatus">
+             <listApp>
+                 <app loc="1">
+                     <lem><g ref="sym:san-nandyavarta" type="symbol">*</g> <supplied reason="lost">si</supplied><unclear>dha</unclear></lem>
+                     <rdg source="bib:IAR2000-2001"><gap reason="lost" extent="unknown" unit="character"/> net</rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>bodhiparigāhakasa</lem>
+                     <rdg source="bib:IAR2000-2001">bodhiparigrahakasa</rdg>
+                     <note>This epithet may be compared to <foreign>sihāsanaparigahaka-</foreign> occurring in <ref target="DHARMA_INSEIAD00046">EIAD 468</ref> and on a potsherd from Salihundam. Cf. Strauch forthcoming, Sal039 <!-- ref needs rework -->. Allusions to the <foreign>bodhi</foreign>-tree or to <foreign>bodhi</foreign>-tree shrines may be found in <ref target="DHARMA_INSKanaganahalli00278">KnI 278</ref>: <foreign>bodhirukhapeḍhikā<space/>c<unclear>e</unclear>tiA</foreign>, <ref target="DHARMA_INSEIAD00020">EIAD 20</ref>, l. 3: <foreign>sīhaḷavihāre <space/> bodhirukhapāsādā</foreign>; <ref target="DHARMA_INSEIAD00592">EIAD 592</ref>: <foreign>saghadāsīya bodhiya <unclear>d</unclear>umaṁ</foreign>.</note>
+                 </app>
+                 <app loc="1">
+                     <lem>vāṇiyasa</lem>
+                     <rdg source="bib:IAR2000-2001">vaniyasa</rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>payasaghādo</lem>
+                     <rdg source="bib:IAR2000-2001">payasa pato</rdg>
+                 </app>
+                 <app loc="1">
+                     <lem>deyadhama</lem>
+                     <rdg source="bib:IAR2000-2001">deyadhama</rdg>
+                 </app>
+             </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>Success! A pair of <supplied reason="subaudible">Buddha</supplied> foot<supplied reason="lost">-prints</supplied>: the pious gift of the merchant Buddhila, who is in possession (or: in charge) of the Bodhi<supplied reason="subaudible">-tree</supplied>.</p>
+         </div>
+         <div type="commentary">
+             <p>First edited in <bibl n="IAR"><ptr target="bib:IAR2000-2001"/><citedRange unit="page">77</citedRange></bibl>.</p>
+         </div>
+         <div type="bibliography">
+            <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in May 2025.</p>
+        	<listBibl type="primary">
+        	    <bibl n="IAR"><!-- ref needs recheck -->
+        	        <ptr target="bib:IAR2000-2001"/>
+        	        <citedRange unit="page">77</citedRange>
+        	    </bibl>
+			</listBibl>
+            <listBibl type="secondary">
+                <bibl/>
+            </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>

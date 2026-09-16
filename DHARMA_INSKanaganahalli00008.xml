@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_Schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_SQF.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>KnI 8. Large slab from the Kanaganahalli stūpa — reign of Vāsiṭṭhīputta Siri-Puḷumāvi, year 35</title><respStmt>
+                    <resp key="creator">author of digital edition</resp>
+                    <persName ref="part:vito">
+                        <forename>Vincent</forename>
+                        <surname>Tournier</surname>
+                    </persName>
+                </respStmt>
+            <funder>European Research Council (ERC), grant agreement no 809994</funder></titleStmt>
+            <publicationStmt>
+                <authority><ref target="https://dharmalekha.info">DHARMA</ref></authority>
+                <pubPlace>Munich</pubPlace>
+                <idno type="filename">DHARMA_INSKanaganahalli00008.xml</idno>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence></availability>
+                <date from="2019" to="2026">2019-2026</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <repository>DHARMAbase</repository>
+                        <idno/>
+                    </msIdentifier>
+                    <msContents>
+                        <summary/>
+                    </msContents>
+                    <physDesc>
+                        <handDesc>
+                            <p/>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+         <p>Encoded in TEI/EpiDoc according to the <ref target="https://hal.science/halshs-02888186">DHARMA Encoding Guide for Documentary Editions, version 2</ref></p>
+      </encodingDesc>
+        <revisionDesc>
+            <change who="part:fufa" when="2025-06-18">Encoding of the translation</change>
+            <change who="part:fufa" when="2025-03-28">Initial encoding</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:space="preserve">
+      <body>
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
+            <p><lb n="1"/>sidha <g ref="sym:doubleBar" type="punctuation">.</g> na<unclear>mo</unclear> <persName type="divine">bhagavato</persName> <persName type="divine" subtype="sobriquet">samasabudhasa</persName> <space/> <placeName type="builtPlace" subtype="temple">Adhālakamahā<lb n="2" break="no"/>ce<unclear>t</unclear>iyasa</placeName> <unclear>ra</unclear>ño <persName type="human" subtype="coronation">vāseṭhiputasiripulumāvisa</persName> <lb n="3"/> savachare <num value="35"><g type="numeral">30</g> 5</num> gi<unclear>m</unclear>h<supplied reason="lost">ā</supplied>na pakhe <num value="2">2</num> <num value="10">10</num> <space/> korukulana <lb n="4"/> bhikhuniya <space/> <persName type="human"><roleName type="monk" subtype="donor">dhamasiriyāya</roleName></persName> <space/> Agarik<unclear>o</unclear> paṭasa<lb n="5" break="no"/>tharo ca deyadhama <space/> saha A<unclear>mā</unclear>p<unclear>itu</unclear>hi <space/> saha ca me <lb n="6"/> upajāEhi bhayata<persName type="human"><roleName type="monk" subtype="beneficiaryMerit">va<unclear>ra</unclear>nabhutihi</roleName></persName> <space/> sahi ca bhayata<lb n="7" break="no"/><persName type="human"><roleName type="monk" subtype="beneficiaryMerit"><unclear>s</unclear>ihehi</roleName></persName> <space/> savasatāna ca hitasughatha</p>
+         </div>
+         <div type="apparatus">
+               <listApp>
+                  <app loc="1">
+                     <lem>sidha</lem>
+                     <rdg source="bib:Nakanishi+Hinuber2014_01">sidha</rdg>
+                     <rdg source="bib:Falk2009_01">siddha</rdg>
+                  </app>
+                  <app loc="2">
+                      <lem>Adhālakamahāce<unclear>t</unclear>iyasa</lem>
+                      <rdg source="bib:Falk2009_01">śudhalakamahāce<unclear>t</unclear>iyasa</rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">Adh<unclear>ā</unclear>lakamahāce<supplied reason="lost">t</supplied>iyasa</rdg>
+                  </app>
+                  <app loc="2">
+                      <lem>vāseṭhiputasiripulumāvisa</lem>
+                      <rdg source="bib:Falk2009_01">vāseṭhi<unclear>p</unclear>utasiripulumāvisa</rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">vāseṭhi<unclear>p</unclear>uta siri pulumāvisa</rdg>
+                  </app>
+                  <app loc="3">
+                      <lem>gi<unclear>m</unclear>h<supplied reason="lost">ā</supplied>na</lem>
+                      <rdg source="bib:Falk2009_01"><unclear>gimhana</unclear></rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">gi<supplied reason="lost">m</supplied>h<supplied reason="lost">ā</supplied>na</rdg>
+                  </app>
+                  <app loc="4">
+                      <lem>bhikhuniya</lem>
+                      <rdg source="bib:Falk2009_01">bhikhuniye</rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">bhikhuniye</rdg>
+                  </app>
+                  <app loc="4-5">
+                      <lem>Agarik<unclear>o</unclear> paṭasatharo</lem>
+                      <rdg source="bib:Falk2009_01">Akhar<unclear>i</unclear>kapaṭa satharo</rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">Agarak<unclear>o</unclear> paṭasatharo</rdg>
+                      <note>The <foreign>i</foreign> is marked by a vertical wave, instead of a semi-circular stroke. This unusual shape is explained by the limited space left by the long descender of the <foreign>akṣara</foreign> <foreign>ka</foreign> in the preceding line. Unusual <foreign>i</foreign> and <foreign>ī</foreign> markers, adapting to similar constraints, may be observed elsewhere, for instance in <ref target="DHARMA_INSEIAD00040">EIAD 40</ref> (<bibl><ptr target="bib:Tsukamoto1996_01"/><citedRange unit="item">Naga 19</citedRange></bibl>), ll. 7 (in <foreign>nī</foreign>) and 8 (in <foreign>ni</foreign>).</note>
+                  </app>
+                  <app loc="5">
+                      <lem>A<unclear>mā</unclear>p<unclear>itu</unclear>hi</lem>
+                      <rdg source="bib:Falk2009_01">A<unclear>māpitu</unclear>hi</rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">A<unclear>māpitū</unclear>hi</rdg>
+                  </app>
+                  <app loc="6">
+                      <lem>bhayatava<unclear>ra</unclear>nabhutihi</lem>
+                      <rdg source="bib:Falk2009_01">bhayatava<unclear>ra</unclear>nabhutihi</rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">bhayata va<unclear>ra</unclear>nabhutihi</rdg>
+                  </app> 
+                  <app loc="6-7">
+                      <lem>sahi ca bhayata<unclear>s</unclear>ihehi</lem>
+                      <rdg source="bib:Falk2009_01">saha ca bhayata <unclear>s</unclear>ihehi</rdg>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">saha ca bhayata<unclear>s</unclear>ihehi</rdg>
+                  </app> 
+                  <app loc="7">
+                      <lem>savasatāna</lem>
+                      <rdg source="bib:Nakanishi+Hinuber2014_01">savasatāna</rdg>
+                      <rdg source="bib:Falk2009_01">savasa<unclear>ta</unclear>na</rdg>
+                  </app> 
+               </listApp>
+         </div>
+         <div type="translation" resp="part:vito">
+             <p>Success! Homage to the <persName type="divine">Bhagavant</persName>, <persName type="divine" subtype="sobriquet">the Perfectly and Completely Awakened One</persName>! In year 35 of King <persName type="human" subtype="coronation">Vāseṭṭhīputta Siri-Puḷumāvi</persName>, in fortnight 2 of the summer, <supplied reason="subaudible">on day</supplied> 10. An <foreign>agarika</foreign> and a covering of slabs: the pious gifts—for the <placeName type="builtPlace" subtype="temple">Adhālaka Great Shrine</placeName>—of <supplied reason="subaudible">me</supplied>, <foreign>bhikkhunī</foreign> <persName type="human"><roleName type="monk" subtype="donor">Dhammasirī</roleName></persName>, of the Korukullas, together with <supplied reason="subaudible">my</supplied> mother and father, with my preceptor the reverend <persName type="human"><roleName type="monk" subtype="beneficiaryMerit">Varaṇabhūti</roleName></persName>, and with reverend <persName type="human"><roleName type="monk" subtype="beneficiaryMerit">Sīha</roleName></persName>; for the well-being and happiness of all beings.</p>
+         </div>
+        <div type="bibliography">
+           <p>This edition, based on photographs, by Vincent Tournier. Encoded in XML by Fu Fan in March 2025.</p>
+        	<listBibl type="primary">
+				<bibl n="N+vH">
+				    <ptr target="bib:Nakanishi+Hinuber2014_01"/>
+				    <citedRange unit="page">31-33</citedRange>
+				    <citedRange unit="section">I</citedRange>
+				    <citedRange unit="item">8</citedRange>
+				</bibl>
+        	    <bibl n="MASI">
+        	        <ptr target="bib:Poonacha2011_01"/>
+        	        <citedRange unit="page">458</citedRange>
+        	        <citedRange unit="item">75</citedRange>
+        	        <citedRange unit="plate">CXXXVI</citedRange>
+        	        <citedRange unit="figure">8</citedRange>
+        	        <citedRange unit="plate">CXLIV</citedRange>
+        	        <citedRange unit="item">A</citedRange>
+        	    </bibl>
+        	    <bibl>
+        	        <ptr target="bib:Tournier2020_02"/>
+        	        <citedRange unit="page">878-880</citedRange>
+        	    </bibl>
+        	    <bibl n="F">
+				    <ptr target="bib:Falk2009_01"/>
+				</bibl>
+			</listBibl>
+           <listBibl type="secondary">
+              <bibl/>
+           </listBibl>
+        </div>
+      </body>
+  </text>
+</TEI>
