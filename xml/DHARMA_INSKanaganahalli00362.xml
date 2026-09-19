@@ -54,7 +54,7 @@
     </teiHeader>
     <text xml:space="preserve">
       <body>
-         <div type="edition" xml:lang="pra-Latn">
+         <div type="edition" xml:lang="pra-Latn" rendition="class:83225 maturity:83209">
              <p><lb n="1"/>nā<unclear>gi</unclear>ya <space/> sirikhiriya <space/> kapaḷarasa</p>
          </div>
          <div type="apparatus">
